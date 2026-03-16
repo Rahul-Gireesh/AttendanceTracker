@@ -14,6 +14,10 @@ namespace AttendanceTracker.Application.Mapper
 			CreateMap<User, UserviewDto>().ReverseMap();
 			CreateMap<Userdeatail, UserviewDto>().ReverseMap();
 			CreateMap<Role, UserviewDto>().ReverseMap();
+			CreateMap<User, UserAddDto>().ReverseMap();
+			CreateMap<Userdeatail, UserAddDto>().ReverseMap();
+			CreateMap<Role, UserAddDto>().ReverseMap();
+			CreateMap<User, LoginDto>().ReverseMap();
 
 
 

@@ -11,22 +11,23 @@ namespace AttendanceTracker.Domain.Entity
 {
 	public class Attendance
 	{
-		public string FieldName {  get; set; }
 		[Key]
-		public int AttendanceID{ get; set; }
-		[Column("UserID")]
-		[ForeignKey(nameof(User))]
-		public int UserID{ get; set; }
-		
-		public DateOnly Date{ get; set; } = DateOnly.FromDateTime(DateTime.Now);
-		public string Status{ get; set; }
+		public int AttendanceID { get; set; }
 
-		public string Course{ get; set; }
-		[Column("UserID")]
-		[ForeignKey(nameof(User))]
-		public int RecordedBy{ get; set; }
-		public User User { get; set; }
+		public int UserID { get; set; }
 
+		public int RecordedBy { get; set; }
+
+		public DateOnly Date { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+
+		public string Status { get; set; }
+
+		public string Course { get; set; }
+
+		// Navigation
+		public User Student { get; set; }
+
+		public User RecordedByUser { get; set; }
 	}
 }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj": {}
+    "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj": {
+    "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj",
         "projectName": "AttendanceTracker.Domain",
-        "projectPath": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj",
+        "projectPath": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.Domain\\AttendanceTracker.Domain.csproj",
         "packagesPath": "C:\\Users\\Rahul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
