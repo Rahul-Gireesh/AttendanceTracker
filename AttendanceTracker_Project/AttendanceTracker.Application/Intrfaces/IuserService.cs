@@ -7,7 +7,7 @@ namespace AttendanceTracker.Application.Intrfaces
 {
 	public interface IuserService
 	{
-		 Task<List<UserviewDto>> GetUsers();
-		Task
+		Task<List<UserviewDto>> GetUsers();
+
 	}
 }

@@ -1,0 +1,12 @@
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.AssemblyInfoInputs.cache
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.AssemblyInfo.cs
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\bin\Debug\net10.0\AttendanceTracker.Domain.deps.json
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\bin\Debug\net10.0\AttendanceTracker.Domain.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\bin\Debug\net10.0\AttendanceTracker.Domain.pdb
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.sourcelink.json
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\refint\AttendanceTracker.Domain.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\AttendanceTracker.Domain.pdb
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Domain\obj\Debug\net10.0\ref\AttendanceTracker.Domain.dll

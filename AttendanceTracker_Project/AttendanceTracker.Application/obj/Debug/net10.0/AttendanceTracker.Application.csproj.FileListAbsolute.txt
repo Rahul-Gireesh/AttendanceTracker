@@ -1,0 +1,16 @@
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.csproj.AssemblyReference.cache
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.AssemblyInfoInputs.cache
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.AssemblyInfo.cs
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.csproj.CoreCompileInputs.cache
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.sourcelink.json
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\bin\Debug\net10.0\AttendanceTracker.Application.deps.json
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\bin\Debug\net10.0\AttendanceTracker.Application.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\bin\Debug\net10.0\AttendanceTracker.Application.pdb
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\bin\Debug\net10.0\AttendanceTracker.Domain.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\bin\Debug\net10.0\AttendanceTracker.Domain.pdb
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\Attendan.DEB1F4A2.Up2Date
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\refint\AttendanceTracker.Application.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\AttendanceTracker.Application.pdb
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.Application\obj\Debug\net10.0\ref\AttendanceTracker.Application.dll
