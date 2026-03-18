@@ -5,23 +5,40 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AttendanceTracker.API.Controllers
 {
-	[Route("api/[controller]")]
 	[ApiController]
-	public class UserAuthenticationController : ControllerBase
+	[Route("api/[controller]")]
+	public class AuthController : ControllerBase
 	{
-		private readonly IAuthservice _authservice;
-		public UserAuthenticationController(IAuthservice authservice)
+		private readonly IAuthservice _authService;
+
+		public AuthController(IAuthservice authService)
 		{
-			_authservice = authservice;
+			_authService = authService;
 		}
 
+		
 		[HttpPost("login")]
-		public async Task<IActionResult> Login(LoginDto loginDto)
+		public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
 		{
-			var result = await _authservice.Login(loginDto);
+			try
+			{
+				var result = await _authService.Login(loginDto);
 
-			return Ok(result);
+				return Ok(new
+				{
+					Token = result.Token,
+					UserName = result.UserName,
+					Role = result.Role,
+					Message = "Login successful"
+				});
+			}
+			catch (Exception ex)
+			{
+				return Unauthorized(new
+				{
+					Message = ex.Message
+				});
+			}
 		}
-
 	}
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AttendanceTracker.Application.Intrfaces
 {
-	public interface IattendanceService
+	public interface IAttendanceService
 	{
 	}
 }
