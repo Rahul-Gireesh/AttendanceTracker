@@ -1,9 +1,11 @@
 using System.Text;
 using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Mapping;
 using AttendanceTracker.Application.Services;
 using AttendanceTracker.Domain.Interface;
 using AttendanceTracker.Infrastructure.Data;
 using AttendanceTracker.Infrastructure.Repository;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -19,6 +21,8 @@ namespace AttendanceTracker.API
 			// Add Controllers
 			builder.Services.AddControllers();
 
+			// Add AutoMapper
+			builder.Services.AddAutoMapper(typeof(Program));
 			// Swagger
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
@@ -31,6 +35,10 @@ namespace AttendanceTracker.API
 			// Dependency Injection
 			builder.Services.AddScoped<IAuthRepo, AuthRepo>();
 			builder.Services.AddScoped<IAuthservice, AuthService>();
+			//builder.Services.AddScoped<IAttendanceRepo, AttendanceRepo>();
+			//builder.Services.AddScoped<IAttendanceService, AttendanceService>();
+			builder.Services.AddScoped<IUserRepo, UserRepo>();
+			builder.Services.AddScoped<IUserService, UserService>();
 
 			// JWT Authentication
 			builder.Services.AddAuthentication(options =>

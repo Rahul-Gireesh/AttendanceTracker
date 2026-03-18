@@ -40,6 +40,8 @@ namespace AttendanceTracker.Infrastructure.Data
 				.HasForeignKey(a => a.UserID)
 				.OnDelete(DeleteBehavior.Restrict);
 
+
+
 			// Attendance -> RecordedBy
 			modelBuilder.Entity<Attendance>()
 				.HasOne(a => a.RecordedByUser)

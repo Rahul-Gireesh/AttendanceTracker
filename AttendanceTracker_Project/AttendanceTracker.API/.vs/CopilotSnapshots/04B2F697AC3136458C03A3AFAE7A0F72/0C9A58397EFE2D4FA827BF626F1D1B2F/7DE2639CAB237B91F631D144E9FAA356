@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using AttendanceTracker.Application.Dtos;
+using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Mapper;
+using AttendanceTracker.Domain.Entity;
+using AttendanceTracker.Domain.Interface;
+using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
+
+namespace AttendanceTracker.Application.Services
+{
+	public class UserService : IUserService
+	{
+		private readonly IUserRepo _repo;
+
+		public UserService(IUserRepo repo)
+		{
+			_repo = repo;
+		}
+
+		public async Task<UserViewDto> CreateUser(UserCreateDto dto)
+		{
+			var user = UserMapper.MapToEntity(dto);
+
+			var createdUser = await _repo.CreateAsync(user);
+
+			return UserMapper.MapToDto(createdUser);
+		}
+
+		public async Task<UserViewDto> GetUserById(int id)
+		{
+			var user = await _repo.GetByIdAsync(id);
+
+			if (user == null) return null;
+
+			return UserMapper.MapToDto(user);
+		}
+
+		public async Task<IEnumerable<UserViewDto>> GetAllUsers()
+		{
+			var users = await _repo.GetAllAsync();
+
+			return users.Select(UserMapper.MapToDto);
+		}
+
+		public async Task<UserViewDto> UpdateUser(int id, UserCreateDto dto)
+		{
+			var user = await _repo.GetByIdAsync(id);
+
+			if (user == null) return null;
+
+			UserMapper.MapToExisting(user, dto);
+
+			var updatedUser = await _repo.UpdateAsync(user);
+
+			return UserMapper.MapToDto(updatedUser);
+		}
+
+		public async Task<bool> DeleteUser(int id)
+		{
+			return await _repo.DeleteAsync(id);
+
+
+		}
+		
+		/// 
+		/// userdetails
+		
+
+		public async Task<UserDetailDto> AddUserDetails(UserDetailDto dto)
+		{
+			var user = UserMapper.MapToUserDetail(dto);
+
+			var createdUser = await _repo.AddUserdeatailAsync(user);
+
+			return createdUser;
+		}
+
+		public Task<UserDetailDto> UpdateUserDetail(int id, UserDetailDto dto)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<bool> DeleteUserDetail(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<IEnumerable<UserDetailDto>> GetAllUserDetails()
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<UserDetailDto> GetUserDetailById(int id)
+		{
+			throw new NotImplementedException();
+		}
+	}
+}
