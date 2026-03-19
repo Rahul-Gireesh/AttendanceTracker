@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IeR6wIBSctM=",
+  "dgSpecHash": "8fn4UZBtnas=",
   "success": true,
   "projectFilePath": "C:\\Users\\Rahul\\OneDrive\\Desktop\\Qwin_First_Project\\AttendanceTracker\\AttendanceTracker_Project\\AttendanceTracker.API\\AttendanceTracker.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Rahul\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Rahul\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
     "C:\\Users\\Rahul\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Rahul\\.nuget\\packages\\log4net\\3.3.0\\log4net.3.3.0.nupkg.sha512",
     "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.5\\microsoft.aspnetcore.authentication.jwtbearer.10.0.5.nupkg.sha512",
     "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
     "C:\\Users\\Rahul\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",

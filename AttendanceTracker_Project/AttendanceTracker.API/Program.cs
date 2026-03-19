@@ -9,7 +9,9 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-
+using log4net;
+using log4net.Config;
+using System.Reflection;
 namespace AttendanceTracker.API
 {
 	public class Program
@@ -18,6 +20,10 @@ namespace AttendanceTracker.API
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
+			//Load log4net configuration
+			var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+			XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
+			
 			// Add Controllers
 			builder.Services.AddControllers();
 
@@ -35,8 +41,8 @@ namespace AttendanceTracker.API
 			// Dependency Injection
 			builder.Services.AddScoped<IAuthRepo, AuthRepo>();
 			builder.Services.AddScoped<IAuthservice, AuthService>();
-			//builder.Services.AddScoped<IAttendanceRepo, AttendanceRepo>();
-			//builder.Services.AddScoped<IAttendanceService, AttendanceService>();
+			builder.Services.AddScoped<IAttendanceRepo, AttendanceRepo>();
+			builder.Services.AddScoped<IAttendanceService, AttendanceService>();
 			builder.Services.AddScoped<IUserRepo, UserRepo>();
 			builder.Services.AddScoped<IUserService, UserService>();
 
@@ -76,7 +82,7 @@ namespace AttendanceTracker.API
 
 			app.UseAuthentication();
 			app.UseAuthorization();
-
+			app.UseMiddleware<AttendanceTracker.API.Middleware.RequestLoggingMiddleware>();
 			app.MapControllers();
 
 			app.Run();
