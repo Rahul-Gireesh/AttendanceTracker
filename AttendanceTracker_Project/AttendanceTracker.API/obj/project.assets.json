@@ -76,6 +76,22 @@
           }
         }
       },
+      "log4net/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.5": {
         "type": "package",
         "dependencies": {
@@ -1101,7 +1117,7 @@
           "System.Security.Cryptography.ProtectedData": "9.0.4"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -1316,6 +1332,25 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "log4net/3.3.0": {
+      "sha512": "wtZ7K4XGWDxeQqHbUybwIug/3AAzhKcmroLf4ENfE5GsaDIMqT3GLX24f18XPFY8Qg9vaxfMSAODwWAXqkjI/Q==",
+      "type": "package",
+      "path": "log4net/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/log4net.dll",
+        "lib/net462/log4net.pdb",
+        "lib/net462/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.pdb",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.3.3.0.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.5": {
@@ -3731,7 +3766,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.5",
-      "Swashbuckle.AspNetCore >= 10.1.5"
+      "Swashbuckle.AspNetCore >= 10.1.5",
+      "log4net >= 3.3.0"
     ]
   },
   "packageFolders": {
@@ -3789,7 +3825,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -3826,6 +3862,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[10.1.5, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[3.3.0, )"
           }
         },
         "imports": [
@@ -3847,7 +3887,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

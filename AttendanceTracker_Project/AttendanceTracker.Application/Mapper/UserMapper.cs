@@ -77,5 +77,39 @@ namespace AttendanceTracker.Application.Mapper
 				user.Password = dto.Password;
 			}
 		}
+
+
+		public static Attendance ToEntity(AttendanceCreateDto dto)
+		{
+			return new Attendance
+			{
+				UserID = dto.UserID,
+				Status = dto.Status,
+				Course = dto.Course,
+				RecordedBy = dto.RecordedBy,   // ✅ FIXED
+
+				Date = DateOnly.FromDateTime(DateTime.Now)
+			};
+		}
+
+
+		public static AttendanceViewDto ToViewDto(Attendance attendance)
+		{
+			return new AttendanceViewDto
+			{
+				AttendanceID = attendance.AttendanceID,
+				UserID = attendance.UserID,
+				Date = attendance.Date,
+				Status = attendance.Status,
+				Course = attendance.Course,
+
+				StudentName = attendance.Student?.UserName,          // ✅ correct nav
+				RecordedBy = attendance.RecordedByUser?.UserName     // ✅ correct nav
+			};
+		}
+
+
+
+
 	}
 }

@@ -11,6 +11,7 @@ namespace AttendanceTracker.Application.Dtos
 		public string Status { get; set; }
 
 		public string Course { get; set; }
+		public int RecordedBy { get; set; }
 	}
 }
 

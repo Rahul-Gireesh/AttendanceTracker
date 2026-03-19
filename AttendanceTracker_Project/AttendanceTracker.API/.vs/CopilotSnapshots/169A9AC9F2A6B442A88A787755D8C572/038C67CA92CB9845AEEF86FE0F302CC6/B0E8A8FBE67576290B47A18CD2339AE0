@@ -1,0 +1,57 @@
+﻿using System.Threading.Tasks;
+using AttendanceTracker.Application.Dtos;
+using AttendanceTracker.Application.Intrfaces;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AttendanceTracker.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AttendanceController : ControllerBase
+    {
+        private readonly IAttendanceService _service;
+
+        public AttendanceController(IAttendanceService service)
+        {
+            _service = service;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] AttendanceCreateDto dto, [FromQuery] int recordedBy)
+        {
+            var result = await _service.CreateAttendance(dto, recordedBy);
+            return Ok(result);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var result = await _service.GetAttendanceById(id);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var result = await _service.GetAllAttendances();
+            return Ok(result);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] AttendanceCreateDto dto, [FromQuery] int recordedBy)
+        {
+            var result = await _service.UpdateAttendance(id, dto, recordedBy);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _service.DeleteAttendance(id);
+            if (!result) return NotFound();
+            return Ok("Deleted successfully");
+        }
+    }
+}

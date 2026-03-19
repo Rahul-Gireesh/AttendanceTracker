@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AttendanceTracker.Application.Dtos;
+using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Domain.Entity;
+using AttendanceTracker.Domain.Interface;
+
+namespace AttendanceTracker.Application.Services
+{
+	public class AttendanceService : IAttendanceService
+	{
+		private readonly IAttendanceRepo _repo;
+		private readonly IUserRepo _userRepo;
+
+		public AttendanceService(IAttendanceRepo repo, IUserRepo userRepo)
+		{
+			_repo = repo;
+			_userRepo = userRepo;
+		}
+
+		public async Task<AttendanceViewDto> CreateAttendance(AttendanceCreateDto dto, int recordedBy)
+		{
+			var entity = new Attendance
+			{
+				UserID = dto.UserID,
+				Status = dto.Status,
+				Course = dto.Course,
+				RecordedBy = recordedBy
+			};
+
+			var created = await _repo.CreateAsync(entity);
+			// re-fetch to include navigation properties
+			var withNav = await _repo.GetByIdAsync(created.AttendanceID);
+			return MapToViewDto(withNav);
+		}
+
+		public async Task<AttendanceViewDto> GetAttendanceById(int id)
+		{
+			var att = await _repo.GetByIdAsync(id);
+			if (att == null) return null;
+			return MapToViewDto(att);
+		}
+
+		public async Task<IEnumerable<AttendanceViewDto>> GetAllAttendances()
+		{
+			var list = await _repo.GetAllAsync();
+			return list.Select(MapToViewDto);
+		}
+
+		public async Task<AttendanceViewDto> UpdateAttendance(int id, AttendanceCreateDto dto, int recordedBy)
+		{
+			var existing = await _repo.GetByIdAsync(id);
+			if (existing == null) return null;
+
+			existing.UserID = dto.UserID;
+			existing.Status = dto.Status;
+			existing.Course = dto.Course;
+			existing.RecordedBy = recordedBy;
+
+			var updated = await _repo.UpdateAsync(existing);
+			var withNav = await _repo.GetByIdAsync(updated.AttendanceID);
+			return MapToViewDto(withNav);
+		}
+
+		public async Task<bool> DeleteAttendance(int id)
+		{
+			return await _repo.DeleteAsync(id);
+		}
+
+		private AttendanceViewDto MapToViewDto(Attendance att)
+		{
+			if (att == null) return null;
+			return new AttendanceViewDto
+			{
+				AttendanceID = att.AttendanceID,
+				UserID = att.UserID,
+				StudentName = att.Student?.UserName,
+				Date = att.Date,
+				Status = att.Status,
+				Course = att.Course,
+				RecordedBy = att.RecordedByUser?.UserName
+			};
+		}
+	}
+}

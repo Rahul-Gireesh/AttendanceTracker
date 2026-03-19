@@ -39,7 +39,7 @@ namespace AttendanceTracker.Application.Services
 			{
 				Token = token,
 				UserName = user.UserName,
-				Role = user.Role?.RoleName
+				//Role = user.Role?.RoleName
 			};
 		}
 
