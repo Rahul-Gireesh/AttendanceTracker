@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using AttendanceTracker.Application.Dtos;
-using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Interfaces;
 using AttendanceTracker.Application.Mapper;
 using AttendanceTracker.Domain.Entity;
 using AttendanceTracker.Domain.Interface;

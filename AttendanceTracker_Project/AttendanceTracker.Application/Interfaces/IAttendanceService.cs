@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AttendanceTracker.Application.Dtos;
 
-namespace AttendanceTracker.Application.Intrfaces
+namespace AttendanceTracker.Application.Interfaces
 {
 	public interface IAttendanceService
 	{

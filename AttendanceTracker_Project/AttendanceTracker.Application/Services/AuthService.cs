@@ -4,7 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AttendanceTracker.Application.Dtos;
-using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Interfaces;
 using AttendanceTracker.Domain.Entity;
 using AttendanceTracker.Domain.Interface;
 using Microsoft.Extensions.Configuration;

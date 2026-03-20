@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +10,12 @@ using AttendanceTracker.Domain.Interface;
 
 namespace AttendanceTracker.Application.Services
 {
-	public class AttendanceService : IAttendanceService
+	public class AttendanceServic : IAttendanceService
 	{
 		private readonly IAttendanceRepo _repo;
 		private readonly IUserRepo _userRepo;
 
-		public AttendanceService(IAttendanceRepo repo, IUserRepo userRepo)
+		public AttendanceServic(IAttendanceRepo repo, IUserRepo userRepo)
 		{
 			_repo = repo;
 			_userRepo = userRepo;
@@ -83,6 +83,31 @@ namespace AttendanceTracker.Application.Services
 				Course = att.Course,
 				RecordedBy = att.RecordedByUser?.UserName
 			};
+		}
+
+		public Task<IEnumerable<AttendanceViewDto>> GetAll()
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<AttendanceViewDto> GetById(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task Add(AttendanceCreateDto dto)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task Update(int id, AttendanceCreateDto dto)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task Delete(int id)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

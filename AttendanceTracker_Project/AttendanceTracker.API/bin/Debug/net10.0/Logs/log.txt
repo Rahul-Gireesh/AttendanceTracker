@@ -1,0 +1,7 @@
+2026-03-19 20:39:38,324 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Request: POST /api/Attendance | Query: 
+2026-03-19 20:43:01,983 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Request: POST /api/Attendance | Query: 
+2026-03-19 20:43:05,427 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Response: 200
+2026-03-19 20:43:18,656 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Request: GET /api/Attendance | Query: 
+2026-03-19 20:43:19,697 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Response: 200
+2026-03-19 20:43:58,851 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Request: GET /api/Attendance/2 | Query: 
+2026-03-19 20:43:59,075 INFO  AttendanceTracker.API.Middleware.RequestLoggingMiddleware - Response: 200

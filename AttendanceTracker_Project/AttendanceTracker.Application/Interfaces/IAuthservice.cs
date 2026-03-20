@@ -4,7 +4,7 @@ using System.Text;
 using AttendanceTracker.Application.Dtos;
 using AttendanceTracker.Domain.Entity;
 
-namespace AttendanceTracker.Application.Intrfaces
+namespace AttendanceTracker.Application.Interfaces
 {
 	public interface IAuthservice
 	{

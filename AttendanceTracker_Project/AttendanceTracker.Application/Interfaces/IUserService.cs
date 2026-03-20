@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AttendanceTracker.Application.Dtos;
 
-namespace AttendanceTracker.Application.Intrfaces
+namespace AttendanceTracker.Application.Interfaces
 {
 	public interface IUserService
 	{

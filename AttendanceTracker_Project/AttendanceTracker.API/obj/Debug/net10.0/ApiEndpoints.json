@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "AttendanceTracker.API.Controllers.AttendanceController",
+    "Method": "GetAll",
+    "RelativePath": "api/Attendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AttendanceTracker.API.Controllers.AttendanceController",
     "Method": "Create",
     "RelativePath": "api/Attendance",
     "HttpMethod": "POST",
@@ -13,16 +23,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AttendanceTracker.API.Controllers.AttendanceController",
-    "Method": "GetAll",
-    "RelativePath": "api/Attendance",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -6,6 +6,16 @@
   },
   "paths": {
     "/api/Attendance": {
+      "get": {
+        "tags": [
+          "Attendance"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Attendance"
@@ -29,16 +39,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "get": {
-        "tags": [
-          "Attendance"
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -428,6 +428,10 @@
           "course": {
             "type": "string",
             "nullable": true
+          },
+          "recordedBy": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
