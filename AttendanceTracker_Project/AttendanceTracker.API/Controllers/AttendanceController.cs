@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Security.Claims;
 using AttendanceTracker.Application.Dtos;
-using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AttendanceTracker.API.Controllers

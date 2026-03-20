@@ -170,3 +170,5 @@ C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceT
 C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.API\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.API\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.API\bin\Debug\net10.0\log4net.config
+C:\Users\Rahul\OneDrive\Desktop\Qwin_First_Project\AttendanceTracker\AttendanceTracker_Project\AttendanceTracker.API\bin\Debug\net10.0\log4net.dll

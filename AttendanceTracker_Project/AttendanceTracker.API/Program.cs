@@ -1,5 +1,5 @@
 using System.Text;
-using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Interfaces;
 using AttendanceTracker.Application.Mapping;
 using AttendanceTracker.Application.Services;
 using AttendanceTracker.Domain.Interface;
@@ -14,6 +14,7 @@ using log4net.Config;
 using System.Reflection;
 namespace AttendanceTracker.API
 {
+
 	public class Program
 	{
 		public static void Main(string[] args)

@@ -1,5 +1,5 @@
 ﻿using AttendanceTracker.Application.Dtos;
-using AttendanceTracker.Application.Intrfaces;
+using AttendanceTracker.Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
